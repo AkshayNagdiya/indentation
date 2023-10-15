@@ -1,0 +1,180 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Caveat:wght@700&family=Inclusive+Sans&family=Lobster&family=Mooli&family=Poppins:wght@200;300;500&family=Quicksand:wght@300&family=Raleway+Dots&family=Sedgwick+Ave+Display&family=Skranji&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(213,208,195);
+    color: black;
+}
+.bi{
+    font-size: 30px;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid darkslategrey;
+    padding-inline: 20px;
+    padding-top: 10px;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading h1{
+    font-size: 250px;
+}
+/* ******************************* */
+.boxs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxs .box{
+    width: 25%;
+    height: 200px;
+    border: 1px solid darkslategrey;
+    padding:10PX;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.box .top{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.box img{
+    width: 140px;
+}
+.box .bi-grid-3x2-gap-fill{
+    font-size: 130px;
+}
+.box .bi-text-indent-left{
+    font-size: 130px;
+}
+/* ******************************** */
+.boxs2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    flex-wrap: wrap; 
+}
+.boxs2 .box{
+    width: 50%;
+    padding: 20px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-left: 1px solid darkslategray;
+}
+.boxs2 .box span{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+.box p{
+    font-size: 10px;
+}
+.boxs2 .box:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box h1{
+    font-size: 100px;
+    padding-top: 50px;
+    font-family: 'Sedgwick Ave Display', sans-serif;
+}
+/* ******************************* */
+
+@media (max-width:1440px) {
+    .navbar{
+        width: 100%;
+    }
+    .heading h1{
+        font-size: 200px;
+    }
+    .boxs{
+        width: 100%;
+    }
+    .box .top h3{
+        font-size: 10px;
+    }
+    .box .top i{
+        font-size: 20px;
+    }
+    .boxs2 .box{
+        height: 200px;
+    }
+    .boxs2 .box h1{
+        font-size: 60px;
+        padding-top: 50px;
+    }
+    
+}
+
+@media (max-width:1024px) {
+    .navbar{
+        width: 100%;
+    }
+    .heading h1{
+        font-size: 125px;
+    }
+    .boxs{
+        width: 100%;
+    }
+    .box .top h3{
+        font-size: 10px;
+    }
+    .box .top i{
+        font-size: 20px;
+    }
+    .boxs2 .box{
+        height: 200px;
+    }
+    .boxs2 .box h1{
+        font-size: 60px;
+        padding-top: 50px;
+    }
+    
+}
+
+
+@media (max-width:768px) {
+    .navbar{
+        width: 100%;
+    }
+    .heading h1{
+        font-size: 125px;
+    }
+    .boxs{
+        width: 100%;
+    }
+    .box .top h3{
+        font-size: 10px;
+    }
+    .box .top i{
+        font-size: 20px;
+    }
+    .boxs2{
+        width: 100%;
+        flex-direction: column;
+    }
+    .boxs2 .box{
+        width: 100%;
+        border-bottom: 1px solid darkslategray;
+    }
+    
+}
